@@ -3,7 +3,7 @@ A YouTube inspired theme for OBS v23 or higher to fit the new service integratio
 
 How to install the version with the custom font:
 
-1. Extract YouTuby.zip
+1. Extract YouTubey.zip
 2. Go to YouTubey Theme -> YouTubey (with Font) -> FONTS
 3. Install all the fonts in there (Comfortaa-Bold, Comfortaa-Light, Comfortaa-Regular)
 4. Move the YouTubey folder and YouTubey.qss into your theme folder (Default is: C:\Program Files (x86)\obs-studio\data\obs-studio\themes\)
