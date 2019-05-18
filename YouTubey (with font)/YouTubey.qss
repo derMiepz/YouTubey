@@ -4,7 +4,7 @@
 /* It contains code snippets from the themes "Acri" made by @Warchamp7        */
 /* and "Rachni" made by @Fenrir. Those themes are also shipped with OBS.      */
 /*                                                                            */
-/* YouTubey created by eZ_KrieG3R aka. Fabi                                    */
+/* YouTubey created by eZ_KrieG3R aka. Fabi                                   */
 /*                                                                            */
 /******************************************************************************/
 
@@ -675,6 +675,17 @@ QStatusBar::item {
     border: none;
 }
 
+/* Table View */
+
+QTableView {
+    gridline-color: rgb(255,0,0); /* youtubeRed */
+}
+
+QHeaderView::section {
+    background-color: rgb(160,0,0); /* darkYoutubeRed */
+    color: rgb(225,224,225); /* veryLight */
+    border: 1px solid rgb(255,68,68); /* lightRed */
+}
 
 /* Mute CheckBox */
 
