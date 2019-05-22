@@ -4,7 +4,7 @@
 /* It contains code snippets from the themes "Acri" made by @Warchamp7        */
 /* and "Rachni" made by @Fenrir. Those themes are also shipped with OBS.      */
 /*                                                                            */
-/* YouTubey-Light created by eZ_KrieG3R aka. Fabi                             */
+/* YouTubey-Lite created by eZ_KrieG3R aka. Fabi                             */
 /*                                                                            */
 /******************************************************************************/
 
@@ -92,8 +92,6 @@ QWidget {
     color: rgb(225,224,225); /* veryLight */
     selection-background-color: rgb(160,0,0); /* darkYoutubeRed */
     selection-color: white;
-	font: regular "Comfortaa";
-	font-weight: bold;
 }
 
 * [frameShape="1"], * [frameShape="2"], * [frameShape="3"], * [frameShape="4"], * [frameShape="5"], * [frameShape="6"] {
@@ -202,7 +200,6 @@ QDockWidget {
 	background: rgb(40,40,40); /* dark */
 	border: none;
 	font-size: 14px;
-	font-weight: bold;
 }
 
 QDockWidget::title {
