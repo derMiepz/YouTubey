@@ -761,11 +761,11 @@ QLabel#errorLabel {
 /* Settings Icons */
 
 OBSBasicSettings {
-    qproperty-generalIcon: url(./YouTubey/settings/general.svg);
-    qproperty-streamIcon: url(./YouTubey/settings/stream.svg);
-    qproperty-outputIcon: url(./YouTubey/settings/output.svg);
-    qproperty-audioIcon: url(./YouTubey/settings/audio.svg);
-    qproperty-videoIcon: url(./YouTubey/settings/video.svg);
-    qproperty-hotkeysIcon: url(./YouTubey/settings/hotkeys.svg);
-    qproperty-advancedIcon: url(./YouTubey/settings/advanced.svg);
+    qproperty-generalIcon: url(./YouTubey-Lite/settings/general.svg);
+    qproperty-streamIcon: url(./YouTubey-Lite/settings/stream.svg);
+    qproperty-outputIcon: url(./YouTubey-Lite/settings/output.svg);
+    qproperty-audioIcon: url(./YouTubey-Lite/settings/audio.svg);
+    qproperty-videoIcon: url(./YouTubey-Lite/settings/video.svg);
+    qproperty-hotkeysIcon: url(./YouTubey-Lite/settings/hotkeys.svg);
+    qproperty-advancedIcon: url(./YouTubey-Lite/settings/advanced.svg);
 }
