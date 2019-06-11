@@ -756,8 +756,8 @@ QLabel#errorLabel {
 
 /* Preview Background color */
 
-* [themeID="displayBackgroundColor"] {
-    qproperty-displayBackgroundColor: rgb(20,20,20);
+OBSQTDisplay {
+	qproperty-displayBackgroundColor: rgb(20,20,20);
 }
 
 
@@ -771,4 +771,42 @@ OBSBasicSettings {
     qproperty-videoIcon: url(./YouTubey/settings/video.svg);
     qproperty-hotkeysIcon: url(./YouTubey/settings/hotkeys.svg);
     qproperty-advancedIcon: url(./YouTubey/settings/advanced.svg);
+}
+
+/* Locked CheckBox */
+
+LockedCheckBox {
+    outline: none;
+    background: transparent;
+}
+
+LockedCheckBox::indicator:checked {
+    image: url(./YouTubey/locked.svg);
+}
+
+LockedCheckBox::indicator:unchecked {
+    image: url(:res/images/unlocked.svg);
+}
+
+/* Visibilty CheckBox */
+
+VisibilityCheckBox {
+    outline: none;
+    background: transparent;
+}
+
+VisibilityCheckBox::indicator:checked {
+    image: url(./YouTubey/visible.svg);
+}
+
+VisibilityCheckBox::indicator:unchecked {
+    image: url(:res/images/invisible.svg);
+}
+
+* [themeID="trashIcon"] {
+    qproperty-icon: url(./YouTubey/trash.svg);
+}
+
+* [themeID="revertIcon"] {
+    qproperty-icon: url(./YouTubey/revert.svg);
 }
