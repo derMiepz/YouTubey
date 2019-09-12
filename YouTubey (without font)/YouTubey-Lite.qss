@@ -4,7 +4,7 @@
 /* It contains code snippets from the themes "Acri" made by @Warchamp7        */
 /* and "Rachni" made by @Fenrir. Those themes are also shipped with OBS.      */
 /*                                                                            */
-/* YouTubey-Lite created by eZ_KrieG3R aka. Fabi                             */
+/* YouTubey-Lite created by eZ_KrieG3R/derMiepz aka. Fabi                     */
 /*                                                                            */
 /******************************************************************************/
 
@@ -336,31 +336,31 @@ QToolButton:pressed {
 }
 
 * [themeID="addIconSmall"] {
-    qproperty-icon: url(./YouTubey-Lite/plus.png);
+    qproperty-icon: url(./YouTubey-Lite/plus.svg);
 }
 
 * [themeID="removeIconSmall"] {
-    qproperty-icon: url(./YouTubey-Lite/minus.png);
+    qproperty-icon: url(./YouTubey-Lite/minus.svg);
 }
 
 * [themeID="propertiesIconSmall"] {
-    qproperty-icon: url(./YouTubey-Lite/cogwheel.png);
+    qproperty-icon: url(./YouTubey-Lite/settings/general.svg);
 }
 
 * [themeID="configIconSmall"] {
-    qproperty-icon: url(./YouTubey-Lite/cogwheel.png);
+    qproperty-icon: url(./YouTubey-Lite/settings/general.svg);
 }
 
 * [themeID="refreshIconSmall"] {
-    qproperty-icon: url(./YouTubey-Lite/refresh.png);
+    qproperty-icon: url(./YouTubey-Lite/refresh.svg);
 }
 
 * [themeID="upArrowIconSmall"] {
-    qproperty-icon: url(./YouTubey-Lite/up_arrow.png);
+    qproperty-icon: url(./YouTubey-Lite/up.svg);
 }
 
 * [themeID="downArrowIconSmall"] {
-    qproperty-icon: url(./YouTubey-Lite/down_arrow.png);
+    qproperty-icon: url(./YouTubey-Lite/down.svg);
 }
 
 
@@ -430,7 +430,7 @@ QComboBox::drop-down {
 
 QComboBox::down-arrow {
     qproperty-alignment: AlignTop;
-    image: url(./YouTubey-Lite/updown.png);
+    image: url(./YouTubey-Lite/updown.svg);
     width: 100%;
 }
 
@@ -450,7 +450,7 @@ QComboBox::drop-down:editable {
 
 QComboBox::down-arrow:editable {
     qproperty-alignment: AlignTop;
-    image: url(./YouTubey-Lite/down_arrow.png);
+    image: url(./YouTubey-Lite/down.svg);
     width: 8%;
 }
 
@@ -518,12 +518,12 @@ QDoubleSpinBox::up-button:disabled, QDoubleSpinBox::up-button:off, QDoubleSpinBo
 }
 
 QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
-    image: url(./YouTubey-Lite/up_arrow.png);
+    image: url(./YouTubey-Lite/up.svg);
     width: 100%;
 }
 
 QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
-    image: url(./YouTubey-Lite/down_arrow.png);
+    image: url(./YouTubey-Lite/down.svg);
     width: 100%;
 }
 
@@ -559,7 +559,7 @@ QPushButton:checked {
 }
 
 QPushButton::menu-indicator {
-    image: url(./YouTubey-Lite/down_arrow.png);
+    image: url(./YouTubey-Lite/down.svg);
     subcontrol-position: right;
     subcontrol-origin: padding;
     width: 25px;
@@ -691,17 +691,30 @@ MuteCheckBox {
 }
 
 MuteCheckBox::indicator:checked {
-    image: url(./YouTubey-Lite/mute.png);
+    image: url(./YouTubey-Lite/mute.svg);
 }
 
 MuteCheckBox::indicator:unchecked {
-    image: url(./YouTubey-Lite/unmute.png);
+    image: url(./YouTubey-Lite/settings/audio.svg);
 }
 
 OBSHotkeyLabel[hotkeyPairHover=true] {
     color: red;
 }
 
+/* Pause */
+
+PauseCheckBox {
+    outline: none;
+}
+
+PauseCheckBox::indicator:checked {
+    image: url(:/res/images/media-pause.svg);
+}
+
+PauseCheckBox::indicator:unchecked {
+    image: url(:/res/images/media-play.svg);
+}
 
 /* Group Collapse Checkbox */
 
@@ -716,11 +729,11 @@ SourceTreeSubItemCheckBox::indicator {
 }
 
 SourceTreeSubItemCheckBox::indicator:checked {
-    image: url(./YouTubey-Lite/expand.png);
+    image: url(./YouTubey-Lite/expand.svg);
 }
 
 SourceTreeSubItemCheckBox::indicator:unchecked {
-    image: url(./YouTubey-Lite/collapse.png);
+    image: url(./YouTubey-Lite/down.svg);
 }
 
 
