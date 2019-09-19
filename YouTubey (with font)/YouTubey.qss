@@ -52,9 +52,9 @@
  * Can also use OBSTheme::disabled, OBSTheme::active, and OBSTheme::inactive.
  * Using it without will set all three (making 'active' a bit redundant) */
 OBSTheme {
-    window: rgb(40,40,40); /* dark */
+    window: rgb(20,20,20); /* veryDark */
     windowText: rgb(225,224,225); /* veryLight */
-    base: rgb(20,20,20); /* veryDark */
+    base: rgb(40,40,40); /* dark */
     alternateBase: rgb(11,10,11); /* veryVeryDark */
     text: rgb(225,224,225); /* veryLight */
     button: rgb(160,0,0); /* darkYoutubeRed */
@@ -62,8 +62,8 @@ OBSTheme {
     brightText: rgb(200,199,200); /* lighter */
 
     light: rgb(255,0,0); /* youtubeRed */
-    mid: rgb(40,40,40); /* dark */
-    dark: rgb(20,20,20); /* veryDark */
+    mid: rgb(20,20,20); /* veryDark */
+    dark: rgb(40,40,40); /* dark */
     shadow: rgb(11,10,11); /* veryVeryDark */
 
     highlight: rgb(255,0,0); /* youtubeRed */
@@ -87,8 +87,8 @@ OBSTheme::inactive {
 
 /* General style, we override only what is needed. */
 QWidget {
-    background-color: rgb(40,40,40); /* dark */
-    alternate-background-color: rgb(20,20,20); /* veryDark */
+    background-color: rgb(20,20,20); /* veryDark */
+    alternate-background-color: rgb(40,40,40); /* dark */
     color: rgb(225,224,225); /* veryLight */
     selection-background-color: rgb(160,0,0); /* darkYoutubeRed */
     selection-color: white;
@@ -154,17 +154,17 @@ QWidget::disabled {
 }
 
 QAbstractItemView, QStackedWidget#stackedMixerArea QWidget {
-    background-color: rgb(20,20,20); /* veryDark */
+    background-color: rgb(40,40,40); /* dark */
 }
 
 QToolTip {
-    background-color: rgb(20,20,20); /* veryDark */
+    background-color: rgb(40,40,40); /* dark */
     color: rgb(205,205,205);
     border: none;
 }
 
 QMenuBar::item {
-    background-color: rgb(40,40,40); /* dark */
+    background-color: rgb(20,20,20); /* veryDark */
 }
 
 /* Scenes and Settings left bar */
@@ -197,7 +197,7 @@ QListWidget::item:hover:!active {
 /* Dock Widget */
 
 QDockWidget {
-	background: rgb(40,40,40); /* dark */
+	background: rgb(20,20,20); /* veryDark */
 	border: none;
 	font-size: 14px;
 	font-weight: bold;
@@ -266,12 +266,12 @@ QGroupBox::title {
 /* ScrollBars */
 
 ::corner {
-    background-color: rgb(40,40,40); /* dark */
+    background-color: rgb(20,20,20); /* veryDark */
     border: none;
 }
 
 QScrollBar:vertical {
-    background-color: rgb(20,20,20); /* veryDark */
+    background-color: rgb(40,40,40); /* dark */
     width: 14px;
 }
 
@@ -281,7 +281,7 @@ QScrollBar::handle:vertical {
     margin: 2px;
     border-radius: 5px;
     border-width: 1px;
-    border: 1px solid rgb(20,20,20); /* veryDark */
+    border: 1px solid rgb(40,40,40); /* dark */
 }
 
 QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
@@ -306,7 +306,7 @@ QScrollBar::handle:horizontal {
     margin: 2px;
     border-radius: 3px;
     border-width: 1px;
-    border: 1px solid rgb(20,20,20); /* veryDark */
+    border: 1px solid rgb(40,40,40); /* dark */
 }
 
 QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
@@ -324,7 +324,7 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal, QScrollBa
 /* Scenes and Sources toolbar */
 
 QToolBar {
-    background-color: rgb(40,40,40); /* dark */
+    background-color: rgb(20,20,20); /* veryDark */
     border: none;
 }
 
@@ -334,7 +334,7 @@ QToolButton:hover {
 }
 
 QToolButton:pressed {
-    background-color: rgb(20,20,20); /* veryDark */
+    background-color: rgb(40,40,40); /* dark */
     border-radius: 3px;
 }
 
@@ -373,7 +373,7 @@ QToolButton:pressed {
 /* Tab Widget */
 
 QTabWidget::pane { /* The tab widget frame */
-    border-top: 1px solid rgb(20,20,20); /* veryDark */
+    border-top: 1px solid rgb(40,40,40); /* dark */
 }
 
 QTabWidget::tab-bar {
@@ -423,7 +423,7 @@ QComboBox {
     border-style: solid;
     border: 1px;
     border-radius: 3px;
-    border-color: rgb(20,20,20); /* veryDark */
+    border-color: rgb(40,40,40); /* dark */
     padding: 2px;
     padding-left: 10px;
 }
@@ -441,7 +441,7 @@ QComboBox::down-arrow {
 }
 
 QComboBox:on {
-    background-color: rgb(20,20,20); /* veryDark */
+    background-color: rgb(40,40,40); /* dark */
 }
 
 QComboBox:editable {
@@ -464,7 +464,7 @@ QComboBox::down-arrow:editable {
 /* Textedits etc */
 
 QLineEdit, QTextEdit, QPlainTextEdit {
-    background-color: rgb(20,20,20); /* veryDark */
+    background-color: rgb(40,40,40); /* dark */
     border: none;
 	border-radius: 3px;
 	margin-right: 2px;
@@ -475,7 +475,7 @@ QLineEdit, QTextEdit, QPlainTextEdit {
 /* Spinbox and doubleSpinbox */
 
 QSpinBox, QDoubleSpinBox {
-    background-color: rgb(20,20,20); /* veryDark */
+    background-color: rgb(40,40,40); /* dark */
     border: none;
     padding-left: 2px;
     padding-right: 15px;
@@ -487,7 +487,7 @@ QSpinBox::up-button, QDoubleSpinBox::up-button {
     subcontrol-position: top right; /* position at the top right corner */
 
     background-color: rgb(160,0,0); /* darkYoutubeRed */
-    border: 1px solid rgb(20,20,20); /* veryDark */
+    border: 1px solid rgb(40,40,40); /* dark */
     border-radius: 3px;
     border-width: 0;
     border-bottom-left-radius: 0;
@@ -499,7 +499,7 @@ QSpinBox::down-button, QDoubleSpinBox::down-button {
     subcontrol-origin: margin;
     subcontrol-position: bottom right; /* position at the top right corner */
     background-color: rgb(160,0,0); /* darkYoutubeRed */
-    border: 1px solid rgb(20,20,20); /* veryDark */
+    border: 1px solid rgb(40,40,40); /* dark */
     border-radius: 3px;
     border-width: 0;
     border-top-left-radius: 0;
@@ -512,15 +512,15 @@ QSpinBox::up-button:hover, QSpinBox::down-button:hover, QDoubleSpinBox::up-butto
 }
 
 QSpinBox::up-button:pressed, QSpinBox::down-button:pressed, QDoubleSpinBox::up-button:pressed, QDoubleSpinBox::down-button:pressed {
-    background-color: rgb(40,40,40); /* dark */
+    background-color: rgb(20,20,20); /* veryDark */
 }
 
 QSpinBox::up-button:disabled, QSpinBox::up-button:off, QSpinBox::down-button:disabled, QSpinBox::down-button:off {
-    background-color: rgb(40,40,40); /* dark */
+    background-color: rgb(20,20,20); /* veryDark */
 }
 
 QDoubleSpinBox::up-button:disabled, QDoubleSpinBox::up-button:off, QDoubleSpinBox::down-button:disabled, QDoubleSpinBox::down-button:off {
-    background-color: rgb(40,40,40); /* dark */
+    background-color: rgb(20,20,20); /* veryDark */
 }
 
 QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
@@ -549,7 +549,7 @@ QPushButton {
 }
 
 QPushButton::flat {
-    background-color: rgb(40,40,40); /* dark */
+    background-color: rgb(20,20,20); /* veryDark */
 }
 
 QPushButton:hover {
@@ -557,7 +557,7 @@ QPushButton:hover {
 }
 
 QPushButton:pressed {
-    background-color: rgb(20,20,20); /* veryDark */
+    background-color: rgb(40,40,40); /* dark */
 }
 
 QPushButton:checked {
@@ -585,7 +585,7 @@ QSlider::handle:horizontal {
         stop: 0 rgb(200,199,200), /* lighter */
         stop: 0.25 rgb(200,199,200),
         stop: 1 rgb(162,161,162)); /* light */
-    border: 1px solid rgb(40,40,40); /* dark */
+    border: 1px solid rgb(20,20,20); /* veryDark */
     border-radius: 3px;
     height: 10px;
     width: 18px;
@@ -623,7 +623,7 @@ QSlider::handle:vertical {
         stop: 0 rgb(240,239,240), /* lighter */
         stop: 0.25 rgb(200,199,200),
         stop: 1 rgb(162,161,162)); /* light */
-    border: 1px solid rgb(40,40,40); /* dark */
+    border: 1px solid rgb(20,20,20); /* veryDark */
     border-radius: 3px;
     width: 10px;
     height: 18px;
@@ -773,7 +773,7 @@ QLabel#errorLabel {
 /* Preview Background color */
 
 OBSQTDisplay {
-	qproperty-displayBackgroundColor: rgb(20,20,20);
+	qproperty-displayBackgroundColor: rgb(40,40,40); /* dark */
 }
 
 
