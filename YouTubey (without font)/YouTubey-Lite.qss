@@ -68,9 +68,9 @@ OBSTheme {
 
     highlight: rgb(255,0,0); /* youtubeRed */
     highlightText: rgb(0,0,0);
-
-    link: rgb(114, 162, 255); /* OBS blue */
-    linkVisited: rgb(114, 162, 255); /* OBS blue */
+	
+    link: rgb(255,0,0); /* youtubeRed */
+    linkVisited: rgb(255,68,68); /* lightRed */
 }
 
 OBSTheme::disabled {
@@ -95,7 +95,7 @@ QWidget {
 }
 
 * [frameShape="1"], * [frameShape="2"], * [frameShape="3"], * [frameShape="4"], * [frameShape="5"], * [frameShape="6"] {
-    border: 1px solid rgb(40,40,40); /* dark */
+    border: 1px solid rgb(20,20,20); /* veryDark */
 	border-radius: 5px;
 }
 
@@ -202,8 +202,7 @@ QDockWidget {
 
 QDockWidget::title {
 	border-bottom: 2px solid rgb(255,0,0); /* youtubeRed */
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-bottom: 1px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	text-align: left;
@@ -363,6 +362,9 @@ QToolButton:pressed {
     qproperty-icon: url(./YouTubey-Lite/down.svg);
 }
 
+* [themeID="pauseIconSmall"] {
+    qproperty-icon: url(./YouTubey/media-pause.svg);
+}
 
 /* Tab Widget */
 
@@ -575,10 +577,7 @@ QSlider::groove:horizontal {
 }
 
 QSlider::handle:horizontal {
-    background-color: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1,
-        stop: 0 rgb(200,199,200), /* lighter */
-        stop: 0.25 rgb(200,199,200),
-        stop: 1 rgb(162,161,162)); /* light */
+    background-color: rgb(200,199,200); /* lighter */
     border: 1px solid rgb(20,20,20); /* veryDark */
     border-radius: 3px;
     height: 10px;
@@ -587,10 +586,7 @@ QSlider::handle:horizontal {
 }
 
 QSlider::handle:horizontal:pressed {
-    background-color: QLinearGradient(x1: 0, y1: 1, x2: 0, y2: 0,
-        stop: 0 rgb(240,239,240), /* lighter */
-        stop: 0.25 rgb(200,199,200),
-        stop: 1 rgb(162,161,162)); /* light */
+    background-color: rgb(160,160,160); /* moreLighter */
 }
 
 QSlider::sub-page:horizontal {
@@ -599,9 +595,7 @@ QSlider::sub-page:horizontal {
 }
 
 QSlider::sub-page:horizontal:disabled {
-    background-color: QLinearGradient(x1: 0, y1: 1, x2: 0, y2: 0,
-        stop: 0 rgb(20,20,20), /* veryDark */
-        stop: 0.75 rgb(50,59,50)); /* grey */
+    background-color: rgb(20,20,20); /* veryDark */
     border-radius: 2px;
 }
 
@@ -613,10 +607,7 @@ QSlider::groove:vertical {
 }
 
 QSlider::handle:vertical {
-    background-color: QLinearGradient(x1: 1, y1: 0, x2: 0, y2: 0,
-        stop: 0 rgb(240,239,240), /* lighter */
-        stop: 0.25 rgb(200,199,200),
-        stop: 1 rgb(162,161,162)); /* light */
+    background-color: rgb(200,199,200); /* lighter */
     border: 1px solid rgb(20,20,20); /* veryDark */
     border-radius: 3px;
     width: 10px;
@@ -625,10 +616,7 @@ QSlider::handle:vertical {
 }
 
 QSlider::handle:vertical:pressed {
-    background-color: QLinearGradient(x1: 1, y1: 0, x2: 0, y2: 0,
-        stop: 0 rgb(240,239,240), /* lighter */
-        stop: 0.25 rgb(200,199,200),
-        stop: 1 rgb(162,161,162)); /* light */
+    background-color: rgb(160,160,160); /* moreLighter */
 }
 
 QSlider::add-page:vertical {
@@ -637,9 +625,7 @@ QSlider::add-page:vertical {
 }
 
 QSlider::add-page:vertical:disabled {
-    background-color: QLinearGradient(x1: 1, y1: 0, x2: 0, y2: 0,
-        stop: 0 rgb(20,20,20), /* veryDark */
-        stop: 0.75 rgb(50,59,50)); /* grey */
+    background-color: rgb(20,20,20); /* veryDark */
     border-radius: 2px;
 }
 
@@ -819,4 +805,64 @@ VisibilityCheckBox::indicator:unchecked {
 
 * [themeID="revertIcon"] {
     qproperty-icon: url(./YouTubey-Lite/revert.svg);
+}
+
+/* Source Icons */
+
+OBSBasic {
+    qproperty-imageIcon: url(./YouTubey/sources/image.svg);
+    qproperty-colorIcon: url(./YouTubey/sources/brush.svg);
+    qproperty-slideshowIcon: url(./YouTubey/sources/slideshow.svg);
+    qproperty-audioInputIcon: url(./YouTubey/sources/microphone.svg);
+    qproperty-audioOutputIcon: url(./YouTubey/settings/audio.svg);
+    qproperty-desktopCapIcon: url(./YouTubey/settings/video.svg);
+    qproperty-windowCapIcon: url(./YouTubey/sources/window.svg);
+    qproperty-gameCapIcon: url(./YouTubey/sources/gamepad.svg);
+    qproperty-cameraIcon: url(./YouTubey/sources/camera.svg);
+    qproperty-textIcon: url(./YouTubey/sources/text.svg);
+    qproperty-mediaIcon: url(./YouTubey/sources/media.svg);
+    qproperty-browserIcon: url(./YouTubey/sources/globe.svg);
+    qproperty-groupIcon: url(./YouTubey/sources/group.svg);
+    qproperty-sceneIcon: url(./YouTubey/sources/scene.svg);
+    qproperty-defaultIcon: url(./YouTubey/sources/default.svg);
+}
+
+/* Scene Tree */
+
+SceneTree {
+    qproperty-gridItemWidth: 150;
+	qproperty-gridItemHeight: 27;
+}
+
+*[gridMode="true"] SceneTree::item {
+    color: rgb(225,224,225); /* veryLight */
+    background-color: rgb(20,20,20); /* veryDark */
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 1px;
+}
+
+*[gridMode="true"] SceneTree::item:selected {
+    background-color: rgb(160,0,0); /* darkYoutubeRed */
+}
+
+*[gridMode="true"] SceneTree::item:hover {
+    background-color: rgb(255,68,68); /* lightRed */
+}
+
+*[gridMode="true"] SceneTree::item:pressed {
+    background-color: rgb(160,0,0); /* darkYoutubeRed */
+}
+
+*[gridMode="true"] SceneTree::item:checked {
+    background-color: rgb(160,0,0); /* darkYoutubeRed */
+}
+
+/* Save icon */
+
+* [themeID="replayIconSmall"] {
+    qproperty-icon: url(./YouTubey/save.svg);
 }
