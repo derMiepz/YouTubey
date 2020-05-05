@@ -195,6 +195,11 @@ QListWidget::item:hover:!active {
 /* Dock Widget */
 
 QDockWidget {
+	titlebar-close-icon: url('./YouTubey-Lite/Close.svg');
+	titlebar-normal-icon: url('./YouTubey-Lite/Popout.svg');
+}
+
+QDockWidget {
 	background: rgb(20,20,20); /* veryDark */
 	border: none;
 	font-size: 14px;
@@ -215,7 +220,7 @@ QDockWidget::title {
 
 QDockWidget::close-button,
 QDockWidget::float-button {
-	icon-size: 30px;
+	icon-size: 12px;
 	subcontrol-position: bottom right;
 	subcontrol-origin: padding;
 	background: transparent;
