@@ -208,7 +208,7 @@ QDockWidget {
 QDockWidget::title {
 	border-bottom: 2px solid rgb(255,0,0); /* youtubeRed */
 	margin-bottom: 1px;
-	padding-top: 0px;
+	padding-left: -3px;
 	padding-bottom: 0px;
 	text-align: left;
 	background-image: url(./YouTubey-Lite/top_hook.png);
