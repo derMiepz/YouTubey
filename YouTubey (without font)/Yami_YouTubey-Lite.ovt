@@ -295,7 +295,7 @@ QDockWidget::title {
 	padding-left: -3px;
 	padding-bottom: 0px;
 	text-align: left;
-	background-image: url(theme:YouTubey-Lite/top_hook.png);
+	background-image: url(theme:YouTubey/top_hook.png);
 	background-origin: padding;
 	background-clip: padding;
 	background-position: bottom left;
