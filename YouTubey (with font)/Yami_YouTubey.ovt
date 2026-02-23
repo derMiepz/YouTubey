@@ -18,8 +18,8 @@
 
     --grey: rgb(50,59,50);
     --dark_grey: rgb(60,60,60);
-    --dark: rgb(20,20,20);
-    --very_dark: rgb(40,40,40);
+    --dark: rgb(40,40,40);
+    --very_dark: rgb(20,20,20);
     --very_very_dark: rgb(11,10,11);
 
     --font_base_value: 10;
@@ -28,15 +28,15 @@
 
     /* Override key Yami defaults that add unwanted grey chrome */
     --border_color: transparent;
-    --bg_window: rgb(20,20,20);
-    --bg_base: rgb(20,20,20);
-    --title_bg: rgb(20,20,20);
+    --bg_window: rgb(40,40,40);
+    --bg_base: rgb(40,40,40);
+    --title_bg: rgb(40,40,40);
 }
 
 OBSTheme {
     window: var(--dark);
     windowText: var(--very_light);
-    base: var(--very_dark);
+    base: var(--dark);
     alternateBase: var(--very_very_dark);
     text: var(--very_light);
     button: var(--youtube_red);
